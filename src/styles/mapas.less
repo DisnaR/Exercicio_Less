@@ -1,0 +1,17 @@
+// Escaping Example
+.escape-example {
+    content: ~"This is an escaped string";
+  }
+    
+  // Mapas Example
+  @icons: {
+    github: "../Imagens/github.svg";
+    instagram: "../Imagens/instagram.svg";
+    linkedin: "../Imagens/linkedin.svg";
+    mail: "../Imagens/mail.svg";
+  };
+    
+  .icon(@name) {
+    background-image: url(@icons[@name]);
+  }
+  
